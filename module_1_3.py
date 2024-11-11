@@ -11,8 +11,9 @@ numbers_of_dz = 12
 number_of_hours = 1.5
 name_of_kurs = 'Python'
 time_to_1_dz = number_of_hours / numbers_of_dz
-print('Курс: ' + str(name_of_kurs) + ',' + ' всего задач: ' + str(numbers_of_dz) + ',' + ' затрачено часов: ' + str(number_of_hours) + ',' + ' среднее время выполнения ' + str(time_to_1_dz) + ' часа.')
-print('Курс: ', name_of_kurs, ', всего задач: ', numbers_of_dz, ', затрачено часов: ', number_of_hours, ', среднее время выполнения ', time_to_1_dz, ' часа.', sep='')
+# print('Курс: ' + str(name_of_kurs) + ',' + ' всего задач: ' + str(numbers_of_dz) + ',' + ' затрачено часов: ' + str(number_of_hours) + ',' + ' среднее время выполнения ' + str(time_to_1_dz) + ' часа.')
+# print('Курс: ', name_of_kurs, ', всего задач: ', numbers_of_dz, ', затрачено часов: ', number_of_hours, ', среднее время выполнения ', time_to_1_dz, ' часа.', sep='')
+print(f'Курс: {name_of_kurs}, всего задач: {numbers_of_dz}, затрачено часов: {number_of_hours}, среднее время выполнения {time_to_1_dz} часа.')
 
 example = 'MacBookPro16'
 print(example[0])
