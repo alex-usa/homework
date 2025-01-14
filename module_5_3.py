@@ -27,8 +27,13 @@ class House:
     def __ne__(self, other):
         return self.number_of_floors != other.number_of_floors
 
-    def __add__(self, value):
-        return House(self.name, self.number_of_floors + value)
+    def __add__(self, other):
+        # return House(self.name, self.number_of_floors + value)
+        if isinstance(other, House):
+            self.number_of_floors += other.number_of_floors
+        elif isinstance(other, int):
+            self.number_of_floors += other
+        return self
 
     def __radd__(self, value):
         return self.__add__(value)
